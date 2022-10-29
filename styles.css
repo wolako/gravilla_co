@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.titre-p{
+    color: #111;
+    text-align: center;
+}
+.titre-p span{
+    border-bottom: 2px solid crimson;
+}
+
+.ban{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.logo a{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo a span{
+    color: crimson;
+}
+
+.nav-item .nav-link{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.nav-item .nav-link:hover{
+    background-color: rgb(99, 96, 96);
+    border-radius: 0.5rem;
+}
+
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.ban-titre{
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* bannier a-propos */
+
+.a-propos{
+    background-image: url('/assets/images/home.jpg');
+}
+
+/* bannier de contact */
+
+.contact{
+    background-image: url('/assets/images/conta.jpg');
+}
+
+/* banniere nos realisation */
+
+.realisations{
+    background-image: url('/assets/images/house.jpg');
+}
+
+.titre{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+.titre h3{
+    padding: 20px 30px;
+}
+
+.image img{
+    height: 400px;
+    width: 500px;
+}
+
+.formu{
+    box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.7);
+    width: 60%;
+    margin: 0 auto;
+    background-color: #959698;
+}
+label{
+    color: #111;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+label span{
+    color: crimson;
+}
+
+.card img{
+    width: 300px;
+    height: 250px;
+}
+    
+.cadre{
+    width: 300px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+    margin-left: 15px;
+}
+
+.bi-list{
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.btni{
+    border: 1px solid #fff;
+}
+
+.bgColor{
+    background-color: royalblue;
+    border-bottom: 1px solid #959698;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+
+.main{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.cool{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.reso{
+    color: #fff;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.bnt{
+    display: flex;
+    position: fixed;
+    right: 30px;
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 768px){
+    .nav-item .nav-link{
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .bnt{
+        display: flex;
+        position: fixed;
+        right: 30px;
+        margin-right: 0;
+    }
+
+    .bnt button{
+       font-size: 0.9rem; 
+    }
+}
+@media screen and (max-width: 425px){
+    .nav-item .nav-link{
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .bnt{
+       display: none; 
+    }
+}
